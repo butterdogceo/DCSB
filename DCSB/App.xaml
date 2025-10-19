@@ -5,6 +5,7 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary x:Name="ThemeDictionary" Source="/DCSB.Icons;component/LightTheme.xaml" />
                 <ResourceDictionary x:Name="ButtonIconDictionary" Source="/DCSB.Icons;component/Buttons.xaml" />
                 <ResourceDictionary x:Name="VolumeIconDictionary" Source="/DCSB.Icons;component/Volume.xaml" />
             </ResourceDictionary.MergedDictionaries>

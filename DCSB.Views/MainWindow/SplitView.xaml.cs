@@ -15,11 +15,7 @@ namespace DCSB.Views.MainWindow
 
         private void UserControlSizeChanged(object sender, SizeChangedEventArgs e)
         {
-            if (splitterGrid.ColumnDefinitions[0].Width.Value != 1)
-            {
-                splitterGrid.ColumnDefinitions[0].Width = new GridLength(1, GridUnitType.Star);
-                splitterGrid.ColumnDefinitions[2].Width = new GridLength(1, GridUnitType.Star);
-            }
+            // No longer needed - removed splitter grid
         }
     }
 }
