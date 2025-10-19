@@ -94,17 +94,6 @@ namespace DCSB.Models
             }
         }
 
-        private double _countersWidth;
-        public double CountersWidth
-        {
-            get { return _countersWidth; }
-            set
-            {
-                _countersWidth = value;
-                RaisePropertyChanged("CountersWidth");
-            }
-        }
-
         private double _soundsWidth;
         public double SoundsWidth
         {
@@ -182,17 +171,6 @@ namespace DCSB.Models
             }
         }
 
-        private CounterShortcuts _counterShortcuts;
-        public CounterShortcuts CounterShortcuts
-        {
-            get { return _counterShortcuts; }
-            set
-            {
-                _counterShortcuts = value;
-                RaisePropertyChanged("CounterShortcuts");
-            }
-        }
-
         private SoundShortcuts _soundShortcuts;
         public SoundShortcuts SoundShortcuts
         {
@@ -207,12 +185,10 @@ namespace DCSB.Models
         public ConfigurationModel()
         {
             PresetCollection = new ObservableObjectCollection<Preset>();
-            CounterShortcuts = new CounterShortcuts();
             SoundShortcuts = new SoundShortcuts();
 
             PresetCollection.CollectionChanged += (sender, e) => RaisePropertyChanged("PresetCollection");
             PresetCollection.CollectionChanged += (sender, e) => RaisePropertyChanged("SelectedPreset");
-            CounterShortcuts.PropertyChanged += (sender, e) => RaisePropertyChanged("CounterShortcuts");
             SoundShortcuts.PropertyChanged += (sender, e) => RaisePropertyChanged("SoundShortcuts");
 
             Volume = 100;
@@ -220,7 +196,6 @@ namespace DCSB.Models
             SecondaryDeviceVolume = 100;
             WindowHeight = 300;
             WindowWidth = 500;
-            CountersWidth = 1;
             SoundsWidth = 1;
         }
     }
