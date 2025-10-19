@@ -1,15 +1,8 @@
-# Deathcounter and Soundboard
+# ~~Deathcounter~~ and Soundboard
 
-Deathcounter and Soundboard allows you to create keyboard shortcuts to trigger sound effects and keep count of something (for example deaths in game). Key shortcuts are recognized even if application is not focused.
+~~Deathcounter~~ and Soundboard allows you to create keyboard shortcuts to trigger sound effects and keep count of something (for example deaths in game). Key shortcuts are recognized even if application is not focused.
 
 ![Application screenshot](screenshot.png?raw=true "Main Window")
-
-## For each counter you can set:
-- *Name* - to easily identify counters
-- *Path to text file* - file where current count is stored and can be used to display it on stream
-- *Count*
-- *Increment* - number that is added/subtracted
-- *Format* - allows you to add custom text to accompany count number
 
 ## For each sound you can set:
 -	*Name* - to easily identify different sounds
@@ -22,11 +15,6 @@ Deathcounter and Soundboard allows you to create keyboard shortcuts to trigger s
 You can create Presets to quickly switch between lists of counters and sounds for different situations, even with keyboard shortcut.
 
 ## Application allows you to set some more keyboard shortcut:
--	Select next counter
--	Select previous counter
--	Increment counter
--	Decrement counter
--	Reset counter
 -	Pause all playing sounds
 -	Continue playing sound
 -	Stop all playing sounds
