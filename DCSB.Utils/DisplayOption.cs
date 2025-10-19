@@ -2,8 +2,6 @@
 {
     public enum DisplayOption
     {
-        Both,
-        Counters,
         Sounds
     }
 }

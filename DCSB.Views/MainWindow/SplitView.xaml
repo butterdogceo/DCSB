@@ -12,13 +12,8 @@
              SizeChanged="UserControlSizeChanged">
 
     <UserControl.Resources>
-        <Converters:DisplayOptionToEnabled x:Key="DisplayOptionToEnabled" />
         <Converters:AreEqualConverter x:Key="AreEqualConverter" />
         <Converters:VKeysToStringConverter x:Key="vKeysToStringConverter" />
-
-        <DataTemplate x:Key="CounterListView">
-            <local:CounterListView DataContext="{Binding RelativeSource={RelativeSource AncestorType=Window}, Path=DataContext}" />
-        </DataTemplate>
 
         <DataTemplate x:Key="SoundListView">
             <local:SoundListView DataContext="{Binding RelativeSource={RelativeSource AncestorType=Window}, Path=DataContext}" />
@@ -70,34 +65,7 @@
             </MenuItem>
         </Menu>
 
-        <ContentControl>
-            <ContentControl.Style>
-                <Style TargetType="{x:Type ContentControl}">
-                    <Style.Triggers>
-                        <DataTrigger Binding="{Binding ConfigurationModel.Enable}" Value="{x:Static Utils:DisplayOption.Counters}">
-                            <Setter Property="ContentTemplate" Value="{StaticResource CounterListView}" />
-                        </DataTrigger>
-                        <DataTrigger Binding="{Binding ConfigurationModel.Enable}" Value="{x:Static Utils:DisplayOption.Sounds}">
-                            <Setter Property="ContentTemplate" Value="{StaticResource SoundListView}" />
-                        </DataTrigger>
-                    </Style.Triggers>
-                </Style>
-            </ContentControl.Style>
-
-            <Grid x:Name="splitterGrid">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="{Binding CountersWidth, Mode=TwoWay}" MinWidth="180" />
-                    <ColumnDefinition Width="Auto" />
-                    <ColumnDefinition Width="{Binding SoundsWidth, Mode=TwoWay}" MinWidth="180" />
-                </Grid.ColumnDefinitions>
-
-                <ContentControl ContentTemplate="{StaticResource CounterListView}" Grid.Column="0" />
-
-                <GridSplitter HorizontalAlignment="Stretch" Width="5" Grid.Column="1" />
-
-                <ContentControl ContentTemplate="{StaticResource SoundListView}" Grid.Column="2" />
-            </Grid>
-        </ContentControl>
+        <ContentControl ContentTemplate="{StaticResource SoundListView}" />
 
     </DockPanel>
 </UserControl>

@@ -127,6 +127,17 @@ namespace DCSB.Models
             }
         }
 
+        private bool _darkMode;
+        public bool DarkMode
+        {
+            get { return _darkMode; }
+            set
+            {
+                _darkMode = value;
+                RaisePropertyChanged("DarkMode");
+            }
+        }
+
         private DisplayOption _enable;
         public DisplayOption Enable
         {

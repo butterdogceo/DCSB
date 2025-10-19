@@ -32,7 +32,7 @@ namespace DCSB
             notifyIcon = new NotifyIcon
             {
                 Icon = icon,
-                Text = "Deathcounter and Soundboard",
+                Text = "Soundboard",
                 Visible = true,
                 ContextMenu = new ContextMenu(new MenuItem[] { open, exit })
             };

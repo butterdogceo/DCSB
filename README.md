@@ -1,6 +1,6 @@
-# ~~Deathcounter~~ and Soundboard
+# Soundboard
 
-~~Deathcounter~~ and Soundboard allows you to create keyboard shortcuts to trigger sound effects and keep count of something (for example deaths in game). Key shortcuts are recognized even if application is not focused.
+Soundboard allows you to create keyboard shortcuts to trigger sound effects. Key shortcuts are recognized even if application is not focused.
 
 ![Application screenshot](screenshot.png?raw=true "Main Window")
 
@@ -12,9 +12,9 @@
 -	*Loop* - whether or not to loop this sound
 
 ## Presets
-You can create Presets to quickly switch between lists of counters and sounds for different situations, even with keyboard shortcut.
+You can create Presets to quickly switch between lists of sounds for different situations, even with keyboard shortcut.
 
-## Application allows you to set some more keyboard shortcut:
+## Application allows you to set keyboard shortcuts for:
 -	Pause all playing sounds
 -	Continue playing sound
 -	Stop all playing sounds
@@ -22,8 +22,7 @@ You can create Presets to quickly switch between lists of counters and sounds fo
 ## Additional settings:
 -	Overlap sounds
 -	Select one or two specific sound output devices
--	Enable/disable counters or sounds
--	Display/hide counters or sounds
+-	Dark mode
 -	Minimize to tray
 
 ## Please read:
